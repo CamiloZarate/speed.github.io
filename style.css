@@ -14,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: left; /* Agregar esta línea para alinear el texto a la izquierda */
+     margin: 0; /* Agregar margen 0 para evitar espacios no deseados en el borde izquierdo */
 }
 
 .container{
