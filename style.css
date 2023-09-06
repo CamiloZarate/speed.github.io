@@ -47,7 +47,7 @@ span {
 #volver {
     position: fixed;
     bottom: 2%; /* Ajusta la distancia desde la parte inferior según tus preferencias */
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     padding: 10px 20px;
     background-color: #022a30;
