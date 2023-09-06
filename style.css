@@ -1,52 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height: 100vh;
+body {
     background: linear-gradient(#022a30 50%, #10532c 50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left; /* Agregar esta línea para alinear el texto a la izquierda */
-     margin: 0; /* Agregar margen 0 para evitar espacios no deseados en el borde izquierdo */
+    text-align: left;
 }
 
-.container{
+.container {
     background-color: #5d7d80;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
-    padding: 0 2em 1em;
+    max-width: 100%;
+    padding: 0.5em;
     border-radius: 1em;
     font-size: 1.2em;
     line-height: 1.6em;
     box-shadow: 0 1.6em 2.4em rgba(40, 4, 67, 0.3);
 }
 
-.container img{
-    width: 100%;
+.container img {
+    max-width: 100%;
+    height: auto;
 }
 
-p{
+p {
     font-weight: 400;
     color: #fff;
 }
 
-span{
+span {
     font-weight: 400;
     color: #090931;
 }
+
 #volver {
     position: fixed;
-    bottom: 500px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
-    left: 4%;
+    bottom: 2%; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    left: 2%;
     transform: translateX(-50%);
     padding: 10px 20px;
     background-color: #022a30;
@@ -74,4 +74,17 @@ span{
 /* Aplicar la animación al botón */
 #volver {
     animation: fadeIn 1s ease-in-out;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 350px; /* Ajusta el ancho máximo según tus preferencias */
+    }
+
+    #volver {
+        bottom: 2%;
+        left: 2%;
+    }
 }
